@@ -32,8 +32,6 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.2.5</version>
       </plugin>
-
-      <!-- Ejecuta la demo: mvn compile exec:java -->
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>exec-maven-plugin</artifactId>
@@ -42,8 +40,6 @@
           <mainClass>com.cipa.nomina.Main</mainClass>
         </configuration>
       </plugin>
-
-      <!-- Cobertura de pruebas: reporte en target/site/jacoco/index.html tras mvn test -->
       <plugin>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>

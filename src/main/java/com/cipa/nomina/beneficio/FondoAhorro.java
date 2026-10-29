@@ -9,11 +9,6 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.EnumSet;
 import java.util.Set;
-
-/**
- * 2 % del salario depositado en el fondo: empleados por horas con más de 1 año que lo acepten.
- * Se asume que es un aporte de la empresa: se informa en el recibo pero no incrementa el neto.
- */
 public class FondoAhorro implements Beneficio {
 
     private final BigDecimal porcentaje;

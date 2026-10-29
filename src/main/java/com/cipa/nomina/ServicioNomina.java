@@ -16,10 +16,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Orquesta la liquidación. Depende de ABSTRACCIONES (Deduccion, Beneficio, Empleado),
- * no de clases concretas (Dependency Inversion). Su única responsabilidad es liquidar (SRP).
- */
+
 public class ServicioNomina {
 
     private final List<Deduccion> deducciones;
@@ -29,8 +26,6 @@ public class ServicioNomina {
         this.deducciones = List.copyOf(deducciones);
         this.beneficios = List.copyOf(beneficios);
     }
-
-    /** Configuración que implementa las reglas del enunciado. */
     public static ServicioNomina conReglasPorDefecto() {
         return new ServicioNomina(
                 List.of(new SeguroSocialPension(), new Arl()),

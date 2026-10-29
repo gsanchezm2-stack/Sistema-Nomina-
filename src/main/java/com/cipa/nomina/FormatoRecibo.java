@@ -7,8 +7,6 @@ import java.text.DecimalFormatSymbols;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-
-/** Formato de texto del recibo (separado del cálculo: SRP). */
 public final class FormatoRecibo {
 
     private static final String LINEA_DOBLE = "=".repeat(52);

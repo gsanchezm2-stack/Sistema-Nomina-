@@ -11,13 +11,13 @@ import java.nio.charset.StandardCharsets;
 import java.time.LocalDate;
 import java.util.List;
 
-/** Demostración: liquida un empleado de cada tipo. */
+
 public class Main {
 
     private static final LocalDate FECHA = LocalDate.of(2026, 10, 28);
 
     public static void main(String[] args) {
-        // Fuerza UTF-8 para que tildes y ñ se vean bien en la consola (útil para las capturas).
+        
         System.setOut(new PrintStream(System.out, true, StandardCharsets.UTF_8));
 
         List<Empleado> empleados = List.of(

@@ -1,5 +1,3 @@
-// Versión 1 (procedural, SIN buenas prácticas). Se conserva solo para mostrar la refactorización.
-// No forma parte del build.
 public class NominaV1 {
     static double calcularNomina(String tipo, double salario, double horas, double tarifa,
                                  double ventas, int anios) {

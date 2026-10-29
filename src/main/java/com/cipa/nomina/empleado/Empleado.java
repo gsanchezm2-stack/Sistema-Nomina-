@@ -4,12 +4,6 @@ import com.cipa.nomina.util.Validaciones;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.Map;
-
-/**
- * Clase base abstracta: datos comunes y contrato que cumplen todos los tipos.
- * Cada tipo calcula su propio devengado (polimorfismo), así agregar un tipo nuevo
- * NO obliga a modificar el resto del sistema (Open/Closed).
- */
 public abstract class Empleado {
 
     private final String nombre;
@@ -32,7 +26,6 @@ public abstract class Empleado {
         return false;
     }
 
-    /** True si lleva MÁS de {@code anios} años (estrictamente) a la fecha de cálculo. */
     public boolean superaAntiguedad(int anios, LocalDate fechaCalculo) {
         return fechaCalculo.isAfter(fechaIngreso.plusYears(anios));
     }
